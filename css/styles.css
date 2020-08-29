@@ -3,6 +3,7 @@
 */
 body {
     --auto: auto;
+    font-family: Verdana, sans-serif;
 }
 header {
     padding-top: 32px;
@@ -11,9 +12,8 @@ header {
 }
 
 .introduction {
-    width: 400px;
-    margin-left: var(--auto);
-    margin-right: var(--auto);
+    width: 25%;
+    margin: 0 var(--auto);
     display: flex;
 }
 
@@ -28,6 +28,7 @@ header {
 }
 
 .info p {
+    width: 200%;
     margin: 0;
     margin-bottom: 16px;
 }
@@ -54,7 +55,7 @@ header {
 }
 
 .about {
-    width: 50%;
+    width: 25%;
     margin: 0 auto;
     display: flex;
     margin-bottom: 60px;
@@ -77,5 +78,5 @@ header {
 }
 
 .desc {
-    width: calc(100% - 180px - 32px);
+    width: calc(50% - 32px);
 }
