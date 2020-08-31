@@ -28,7 +28,7 @@ header {
 }
 
 .info p {
-    width: 200%;
+    width: 100%;
     margin: 0;
     margin-bottom: 16px;
 }
@@ -55,7 +55,7 @@ header {
 }
 
 .about {
-    width: 25%;
+    width: 600px;
     margin: 0 auto;
     display: flex;
     margin-bottom: 60px;
@@ -74,9 +74,35 @@ header {
 .pic {
     margin-bottom: var(--auto);
     margin-top: var(--auto);
-    /* width: 180; */
+    width: 360px;
+    position: relative;
+    
+}
+
+.pic > img {
+    width: 180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
 }
 
 .desc {
     width: calc(50% - 32px);
+}
+
+
+@media screen and (max-width:640px) {
+
+.about {
+    width: 25%;
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 60px;
+    justify-content: space-between;
+    transition: background .3s;
+}
+
 }
