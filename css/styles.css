@@ -93,6 +93,10 @@ header {
     width: calc(50% - 32px);
 }
 
+.desc > ul {
+    list-style: none;
+}
+
 
 @media screen and (max-width:640px) {
 
@@ -123,6 +127,8 @@ header {
 
     .about > .pic > img {
         border-radius: 70%;
+        height: 100px;
+        width: 100px;
         /* border-width: 4px;
         border-style: solid;
         border-color: #343a40; */
