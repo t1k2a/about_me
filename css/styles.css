@@ -64,7 +64,7 @@ header {
 }
 
 .about:hover {
-        background-color: rgba(0, 0, 0, .2);
+    background-color: rgba(0, 0, 0, .2);
 }
 
 /* .about:nth-child(odd) {
@@ -97,10 +97,38 @@ header {
     list-style: none;
 }
 
+.portfolio {
+    width: 600px;
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 60px;
+    justify-content: space-between;
+    transition: background .3s;
+}
+
+.portfolio:hover {
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.portfolio-desc {
+    padding-left: 32px;
+    width: calc(50% - 32px);
+
+}
+
+.portfolio-video > video {
+    margin-bottom: var(--auto);
+    margin-top: var(--auto);
+    width: 360px;
+    height: 360px;
+    position: relative;
+}
+
 
 @media screen and (max-width:640px) {
 
-    body {
+    html {
+        width: auto;
         /* background: green; */
     }
     
