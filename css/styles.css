@@ -97,6 +97,16 @@ header {
     list-style: none;
 }
 
+.section-title,
+.self-title,
+.self-introduction {
+    text-align: center;
+}
+
+.carrer-desc {
+    text-align: left;
+}
+
 .portfolio {
     width: 600px;
     margin: 0 auto;
@@ -140,6 +150,21 @@ header {
         background: yellowgreen;
     } */
 
+    .section-title {
+        width: 300px;
+    }
+    .self-introduction {
+        width: 600px;
+        text-align: center;
+    }
+
+    .title {
+        margin-left: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .about-section {
         margin: 100px 0 auto;
         width: 100%;
