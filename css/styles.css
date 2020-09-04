@@ -58,14 +58,10 @@ header {
     width: 600px;
     margin: 0 auto;
     display: flex;
-    margin-bottom: 60px;
     justify-content: space-between;
     transition: background .3s;
 }
 
-.about:hover {
-    background-color: rgba(0, 0, 0, .2);
-}
 
 /* .about:nth-child(odd) {
     flex-direction: row-reverse;
@@ -80,13 +76,19 @@ header {
 }
 
 .pic > img {
-    width: 180px;
+    width: 300px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
 
+}
+
+.about-section > h1 {
+    margin: 0 auto;
+    font-size: 2em;
+    text-align: center;
 }
 
 .desc {
@@ -98,13 +100,26 @@ header {
 }
 
 .section-title,
-.self-title,
-.self-introduction {
+.self-title{
     text-align: center;
 }
 
+.self-introduction {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.self-introduction > p {
+    margin: 0 var(--auto);
+    width: 500px;
+}
+
+.desc-title-smartphone {
+    display: none;
+}
+
 .carrer-desc {
-    text-align: left;
+    text-align: center;
 }
 
 .portfolio {
@@ -116,9 +131,6 @@ header {
     transition: background .3s;
 }
 
-.portfolio:hover {
-    background-color: rgba(0, 0, 0, .2);
-}
 
 .portfolio-desc {
     padding-left: 32px;
@@ -128,31 +140,25 @@ header {
 
 .portfolio-video > video {
     margin-bottom: var(--auto);
-    margin-top: var(--auto);
+    margin-top: 30px;
     width: 360px;
     height: 360px;
     position: relative;
 }
 
+    
 
 @media screen and (max-width:640px) {
 
     html {
         width: auto;
-        /* background: green; */
     }
     
-    header {
-        /* background: skyblue; */
+    .self-title {
+        width: 500px;
     }
 
-    /* .info {
-        background: yellowgreen;
-    } */
 
-    .section-title {
-        width: 300px;
-    }
     .self-introduction {
         width: 600px;
         text-align: center;
@@ -165,13 +171,21 @@ header {
         justify-content: center;
         align-items: center;
     }
+
+    .section-title {
+        width: 500px;
+    }
+
     .about-section {
         margin: 100px 0 auto;
         width: 100%;
     }
 
+    .about-section > h1 {
+        margin: 0  150px auto 100px;
+    }
+
     .about {
-        /* background: orange; */
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -180,17 +194,36 @@ header {
 
     .about > .pic > img {
         border-radius: 70%;
-        height: 100px;
-        width: 100px;
-        /* border-width: 4px;
-        border-style: solid;
-        border-color: #343a40; */
-        object-fit: cover;
+        height: 150px;
+        width: 150px;
     }
 
     .about > .desc {
         margin: 100px auto;
-        padding-top: var(--auto);
+    }
+
+
+    .carrer-desc {
+        width: 500px;
+        text-align: center;
+    }
+
+    .about > .carrer-desc > h1 {
+        font-size: 2em;
+    }
+
+    .desc-title-pc {
+        display: none;
+    }
+
+    .desc-title-smartphone {
+        display: block;
+        font-size: 2em;
+    }
+
+    .portfolio-video > video {
+        width: var(--auto);
+        height: 360px;
     }
 
 }
