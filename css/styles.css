@@ -5,6 +5,34 @@ body {
     --auto: auto;
     font-family: Verdana, sans-serif;
 }
+
+#logo {
+    width: 100%;
+    text-align: center;
+    padding: 300px 0px 300px 0px;
+    margin-bottom: 0px;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.fade {
+    animation: fadeIn 1s ease 0.3s 1 normal;
+}
+
+.fade2 {
+    animation: fadeIn 2s ease 0.3s normal;
+}
+
+.fade3 {
+    animation: fadeIn 3s ease 0.3s normal;
+}
+
+@keyframes fadeIn {
+    0%, 25%, 50%, 75%{opacity: 0}
+
+    100% {opacity: 1}
+}
+
 header {
     padding-top: 32px;
     padding-bottom: 32px;
