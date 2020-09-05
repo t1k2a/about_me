@@ -160,6 +160,7 @@ header {
 
 
     .self-introduction {
+        margin-bottom: 0px;
         width: 600px;
         text-align: center;
     }
@@ -199,9 +200,8 @@ header {
     }
 
     .about > .desc {
-        margin: 100px auto;
+        margin: 100px auto 0px;
     }
-
 
     .carrer-desc {
         width: 500px;
