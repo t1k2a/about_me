@@ -138,6 +138,14 @@ header {
 
 }
 
+.portfolio-img > img {
+    margin-bottom: 50px;
+    margin-top: 30px;
+    width: 300px;
+    height: 230px;
+    position: relative;
+}
+
 .portfolio-video > video {
     margin-bottom: var(--auto);
     margin-top: 30px;
