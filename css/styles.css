@@ -171,7 +171,8 @@ header {
     width: 360px;    
 }
 
-.pic > img {
+.pic > img,
+.pic > video {
     width: 300px;
     /* position: absolute;
     top: 50%;
@@ -179,6 +180,10 @@ header {
     transform: translate(-50%, -50%);
     text-align: center; */
 
+}
+
+.pic > video {
+    height: 200px;
 }
 
 .hobby-desc {
@@ -232,6 +237,13 @@ header {
     display: none;
 }
 
+.carrer-title {
+    text-align: center;
+    margin: 120px auto 50px;
+
+}
+
+.carrer-title,
 .carrer-desc {
     text-align: center;
 }
@@ -259,15 +271,22 @@ header {
     position: relative;
 }
 
-.portfolio-video > video {
-    margin-bottom: var(--auto);
-    margin-top: 30px;
-    width: 360px;
-    height: 360px;
+.footer {
+    background:black;
+    color: white;
+    text-align: center;
+    margin-top: 150px;
+    height: 40px;
     position: relative;
 }
 
-    
+.footer > p {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    font-size: 12px;
+}
 
 @media screen and (max-width:640px) {
 
