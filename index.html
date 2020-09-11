@@ -18,13 +18,11 @@
                 h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
         })(document);
     </script>
-
-
 </head>
 
 
 <body>
-    <!-- <div id="logo">
+    <div id="logo">
         <div class="fade">
             <h1>Hi, I am</h1>
         </div>
@@ -32,10 +30,17 @@
             <h1>George</h1>
         </div>
         <div class="fade3">
-            <img src="img/scroll.png" width="100px" height="100px">
+            <h1>Welcome to My Page</h1>
         </div>
-    </div> -->
-    <!-- <header> -->
+        <script>
+            var fade3 = document.querySelector(".fade3");
+            fade3.addEventListener('animationend', function() {
+                const logo = document.getElementById("logo");
+                logo.classList.add('loaded');
+            });
+        </script>
+    </div>
+
     <header>
         <div class="header-list">
             <ul class="column">
