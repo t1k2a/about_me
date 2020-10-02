@@ -6,6 +6,7 @@
     <title>About me!!</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive-styles.css">
 
     <!-- Noto Sans CJK JP -->
     <script>
@@ -42,12 +43,35 @@
     </div>
 
     <header>
+        <div id="hamburger">
+            <span></span>
+        </div>
         <div class="header-list">
             <ul class="column">
-                <li>ABOUT ME　|</li>
-                <li>　HOBBY　|</li>
-                <li>　CARRER　|</li>
-                <li>　WORKS　</li>
+                <li>
+                    <a href="#about-me">
+                        ABOUT ME
+                    </a>
+                    　|
+                </li>
+                <li>
+                    　<a href="#hobby">
+                        HOBBY
+                    </a>
+                    　|
+                </li>
+                <li>　
+                    <a href="#carrer">
+
+                        CARRER
+                    </a>
+                    　|
+                </li>
+                <li>
+                    <a href="#works">
+                        　WORKS
+                    </a>
+                    　</li>
             </ul>
 
             <ul class="sns-icons">
@@ -76,12 +100,13 @@
     </header>
 
     <div class="icon">
-        <img src="img/mv.png" alt="george">
+        <img class="me" src="img/mv.png" alt="george">
+        <img class="me-sp" src="img/me-smartphone.png" ale="george">
     </div>
 
 
     <div class="title">
-        <div class="self-title">
+        <div class="self-title" id="about-me">
             <h1>ABOUT ME</h1>
             <h5>ー　私について　ー</h5>
         </div>
@@ -92,12 +117,12 @@
             <p>何卒よろしくお願いします！！！</p>
         </div>
     </div>
-    <section class="about-section">
+    <section class="about-section" id="hobby">
         <div class="desc-title-pc">
             <h1>HOBBY</h1>
             <h5>ー　私の趣味　ー</h5>
         </div>
-        <div class="desc-title-smartphone">
+        <div class="desc-title-smartphone" id="hobby">
             <h1>HOBBY</h1>
             <h5>ー　私の趣味　ー</h5>
         </div>
@@ -131,52 +156,53 @@
                 </div>
             </div>
         </div>
+    </section>
 
-        <div class="desc-title-pc carrer-title">
-            <h1>CARRER</h1>
-            <h5>ー　私の経歴　ー</h5>
-        </div>
-        <div class="desc-title-smartphone">
-            <h1>HOBBY</h1>
-            <h5>ー　私の経歴　ー</h5>
-        </div>
-        <div class="self-introduction">
-            <h1 class="desc-title-smartphone">Career</h1>
-            <p>新卒で自社開発企業に就職する。</p>
-            <p>1年半で見切りをつけてベンチャー企業に転職するも、<br>圧力に耐えられずうつ病になる。</p>
-            <p>その後1ヶ月の休職を経て復帰するも、うつ病が再発して退職する。</p>
-            <p>知人の企業にSESとして就職。現在に至る。</p>
-        </div>
-        </div>
+    <div class="desc-title-pc carrer-title" id="carrer">
+        <h1>CARRER</h1>
+        <h5>ー　私の経歴　ー</h5>
+    </div>
+    <div class="desc-title-smartphone" id="carrer">
+        <h1>HOBBY</h1>
+        <h5>ー　私の経歴　ー</h5>
+    </div>
+    <div class="self-introduction">
+        <h1 class="desc-title-smartphone" id="carrer">Career</h1>
+        <p>新卒で自社開発企業に就職する。</p>
+        <p>1年半で見切りをつけてベンチャー企業に転職するも、<br>圧力に耐えられずうつ病になる。</p>
+        <p>その後1ヶ月の休職を経て復帰するも、うつ病が再発して退職する。</p>
+        <p>知人の企業にSESとして就職。現在に至る。</p>
+    </div>
+    </div>
 
-        <div class="desc-title-pc carrer-title">
-            <h1>WORKS</h1>
-            <h5>ー　成果物　ー</h5>
-        </div>
-        <div class="desc-title-smartphone">
-            <h1>WORKS</h1>
-            <h5>ー　成果物　ー</h5>
-        </div>
-        <section class="hobbys">
-            <div class="pic">
-                <img src="img/utsupedia.png">
-                <div class="hobby-desc">
-                    <h3>うつペディア</h3>
-                    <p>うつ病に関する認知向上を目的としたの情報投稿サイト</p>
-                </div>
+    <div class="desc-title-pc carrer-title" id="works">
+        <h1>WORKS</h1>
+        <h5>ー　成果物　ー</h5>
+    </div>
+    <div class="desc-title-smartphone" id="works">
+        <h1>WORKS</h1>
+        <h5>ー　成果物　ー</h5>
+    </div>
+    <section class="hobbys">
+        <div class="pic">
+            <img src="img/utsupedia.png">
+            <div class="hobby-desc">
+                <h3>うつペディア</h3>
+                <p>うつ病に関する認知向上を目的としたの情報投稿サイト</p>
             </div>
-            <div class="pic">
-                <video src="movie/RPReplay_Final1598527820.mp4" playsinline loop autoplay muted></video>
-                <div class="hobby-desc">
-                    <h3>うつペディア（スマホ）</h3>
-                    <p>うつペディアをレスポンシブデザインに適応</p>
-                </div>
+        </div>
+        <div class="pic">
+            <video src="movie/RPReplay_Final1598527820.mp4" playsinline loop autoplay muted></video>
+            <div class="hobby-desc">
+                <h3>うつペディア（スマホ）</h3>
+                <p>うつペディアをレスポンシブデザインに適応</p>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <footer class="footer">
-            <p>Copyright © 2020- GEORGE All rights reserved.</p>
-        </footer>
+    <footer class="footer">
+        <p>Copyright © 2020- GEORGE All rights reserved.</p>
+    </footer>
 </body>
 
 </html>

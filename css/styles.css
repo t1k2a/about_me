@@ -2,12 +2,6 @@
     ABOUT MEページ
 */
 
-/* ヘッダー→Lato Black
-それ以外の欧文→Verdana
-和文→Noto Sans CJK JP
-だよ〜！
-Noto SansはAdobeからコード取れたから、貼ってみた！ */
-
 @font-face {
     font-family: 'lato-black';
     src: url(../font/Lato-Black.ttf);
@@ -28,7 +22,7 @@ body {
     transition: all 3s;
     background-color: white;
     text-align: center;
-    padding: 300px 0px 300px 0px;
+    padding: 150px 0px 300px 0px;
     margin-bottom: 0px;
     font-size: 30px;
     letter-spacing: 2px;
@@ -90,8 +84,13 @@ header {
     font-weight: bold;
 }
 
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
 .sns-icons {
-    margin: 10px 45px 0 0;
+    margin: 10px 50px 0 0;
 }
 
 .column > li,
@@ -153,11 +152,15 @@ header {
 .icon {
     
 }
-.icon img{
+.me{
     /* position: absolute; */
     width: 100%;
     /* padding-top: 70px;
     vertical-align: bottom; */
+}
+
+.me-sp {
+    display: none;
 }
 
 .about {
@@ -311,81 +314,4 @@ header {
     font-size: 12px;
 }
 
-@media screen and (max-width:640px) {
 
-    html {
-        width: auto;
-    }
-    
-    .self-title {
-        width: 500px;
-    }
-
-    .self-introduction {
-        margin-bottom: 0px;
-        width: 600px;
-        text-align: center;
-    }
-
-    .title {
-        margin-left: 200px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .section-title {
-        width: 500px;
-    }
-
-    .about-section {
-        margin: 100px 0 auto;
-        width: 100%;
-    }
-
-    .about-section > h1 {
-        margin: 0  150px auto 100px;
-    }
-
-    .about {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .about > .pic > img {
-        border-radius: 70%;
-        height: 150px;
-        width: 150px;
-    }
-
-    .about > .desc {
-        margin: 100px auto 0px;
-    }
-
-    .carrer-desc {
-        width: 500px;
-        text-align: center;
-    }
-
-    .about > .carrer-desc > h1 {
-        font-size: 2em;
-    }
-
-    .desc-title-pc {
-        display: none;
-    }
-
-    .desc-title-smartphone {
-        display: block;
-        font-size: 2em;
-    }
-
-    .portfolio-video > video {
-        width: var(--auto);
-        height: 360px;
-    }
-
-}
