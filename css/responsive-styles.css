@@ -19,9 +19,17 @@
         margin-top: -50px;
     }
 
-    .sns-icons ,
+    .close {
+        
+    }
+
+    .header-list-sp,
+    .list-icon {
+        display: block;
+    }
+
+    .sns-icons,
     .column{
-        /* 検証用に非表示 */
         display: none;
     }
     .me {
@@ -86,7 +94,7 @@
         transform: translateY(-50%);
     }
 
-    #hamburger::before {
+    #hamburger:before {
         content: '';
         display: block;
         position: absolute;
@@ -97,7 +105,7 @@
         background-color: black;
     }
 
-    #hamburger::after {
+    #hamburger:after {
         content: '';
         display: block;
         position: absolute;
@@ -106,5 +114,81 @@
         width: 100%;
         height: 2px;
         background-color: black;
+    }
+
+    #hamburger:checked ~ #hamburger span::before{
+        bottom: 0;
+        transform: rotate(45deg);
+    }
+    #hamburger:checked ~ #hamburger span::after{
+        bottom: 0;
+        transform: rotate(-45deg);
+    }
+
+    .header-list-sp {
+        z-index: 1;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        display: block;
+        background: white!important;
+        opacity: 0;
+        text-align: center;
+        transform: translateY(-100%);
+        transition: all .2S ease-in-out;
+    }
+
+    .close {
+        display: block;
+        /* position: sticky;
+        top: 0;
+        height: 0;
+        text-align: right; */
+    }
+
+    .header-list-sp ul {
+        /* padding: 0; */
+        margin-top: 10%;
+        display: block;
+        height: 100%;
+        list-style: none;
+    }
+
+    .header-list-sp li {
+        font-size: 24px;
+    }
+
+    .header-list-sp li span {
+        font-size: 15px;
+        color: var(--white);
+    }
+
+    .header-list-sp li a, .header-list-sp li span {
+        display: block;
+        padding: 20px 0;
+    }
+
+    .header-list-sp .close {
+        position: relative;
+        padding-left: 20px;
+    }
+
+    .sns-icons-sp {
+        margin-left: 9em;
+        margin-top: 40%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .sns-icons-sp li{
+        display: inline-block;
+        width: 50px;
+    }
+
+    .toggle {
+        transform: translateY( 0 );
+        opacity: 1;
     }
 }

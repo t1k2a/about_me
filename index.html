@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <title>About me!!</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/responsive-styles.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.js"
+        integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
 
     <!-- Noto Sans CJK JP -->
     <script>
@@ -18,6 +20,14 @@
             },
                 h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
         })(document);
+        $(function () {
+            const hum = $('#hamburger, .list-link, .close')
+            const list = $(".header-list-sp, .list-icon");
+            hum.on('click', function () {
+                // toggleをつけたり消したりするらしい
+                list.toggleClass('toggle');
+            });
+        });
     </script>
 </head>
 
@@ -45,6 +55,62 @@
     <header>
         <div id="hamburger">
             <span></span>
+        </div>
+        <div class="header-list-sp">
+            <ul>
+                <li>
+                    <a class="list-link" href="#about-me">
+                        HOME
+                    </a>
+                </li>
+                <li>
+                    <a class="list-link" href="#about-me">
+                        ABOUT ME
+                    </a>
+                </li>
+                <li>
+                    <a class="list-link" href="#hobby">
+                        HOBBY
+                    </a>
+                </li>
+                <li>　
+                    <a class="list-link" href="#carrer">
+                        CARRER
+                    </a>
+                </li>
+                <li>
+                    <a class="list-link" href="#works">
+                        WORKS
+                    </a>
+                </li>
+                <li class="close">
+                    <span>
+                        × CLOSE
+                    </span>
+                </li>
+                <div class="sns-icons-sp">
+                    <li>
+                        <a href="https://twitter.com/George23767665" target="_blank">
+                            <img src="img/icon_tw.png" width="30" height="30">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/profile.php?id=100009791496155" target="_blank">
+                            <img src="img/icon_fb.png" width="30" height="30">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/george_onepiece_naruto/" target="_blank">
+                            <img src="img/icon_ig.png" width="30" height="30">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.wantedly.com/users/103094284" target="_blank">
+                            <img src="img/icon_wa.png" width="30" height="30">
+                        </a>
+                    </li>
+                </div>
+            </ul>
         </div>
         <div class="header-list">
             <ul class="column">
