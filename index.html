@@ -10,22 +10,10 @@
     <script src="https://code.jquery.com/jquery-2.2.4.js"
         integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
 
-    <!-- Noto Sans CJK JP -->
     <script>
-        (function (d) {
-            var config = {
-                kitId: 'upy7wbe',
-                scriptTimeout: 3000,
-                async: true
-            },
-                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
-        })(document);
         $(function () {
-            const hum = $('#hamburger, .list-link, .close')
-            const list = $(".header-list-sp, .list-icon");
-            hum.on('click', function () {
-                // toggleをつけたり消したりするらしい
-                list.toggleClass('toggle');
+            $(".nav_toggle").on("click", function () {
+                $(".nav_toggle, .nav").toggleClass("show");
             });
         });
     </script>
@@ -41,7 +29,7 @@
             <h1>George</h1>
         </div>
         <div class="fade3">
-            <h1>Welcome to My Page</h1>
+            <h1>Welcome to My portfolio</h1>
         </div>
         <script>
             var fade3 = document.querySelector(".fade3");
@@ -53,65 +41,63 @@
     </div>
 
     <header>
-        <div id="hamburger">
-            <span></span>
+        <div class="hamburger">
+            <span class="nav_toggle">
+                <i class="line-top"></i>
+                <i class="line-middle"></i>
+                <i class="line-bottom"></i>
+            </span>
+            <nav class="nav header-list-sp">
+                <ul class="nav_menu_ul">
+                    <li class="nav_menu_li">
+                        <a class="list-link" href="#about-me">
+                            HOME
+                        </a> </li>
+                    <li class="nav_menu_li">
+                        <a class="list-link" href="#about-me">
+                            ABOUT ME
+                        </a> </li>
+                    <li class="nav_menu_li">
+                        <a class="list-link" href="#hobby">
+                            HOBBY
+                        </a>
+                    </li>
+                    <li class="nav_menu_li">
+                        <a class="list-link" href="#carrer">
+                            CARRER
+                        </a>
+                    </li>
+                    <li class="nav_menu_li">
+                        <a class="list-link" href="#works">
+                            WORKS
+                        </a>
+                    </li>
+                    <div class="sns-icons-sp">
+                        <li>
+                            <a href="https://twitter.com/George23767665" target="_blank">
+                                <img src="img/icon_tw.png" width="30" height="30">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/profile.php?id=100009791496155" target="_blank">
+                                <img src="img/icon_fb.png" width="30" height="30">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/george_onepiece_naruto/" target="_blank">
+                                <img src="img/icon_ig.png" width="30" height="30">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.wantedly.com/users/103094284" target="_blank">
+                                <img src="img/icon_wa.png" width="30" height="30">
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
         </div>
-        <div class="header-list-sp">
-            <ul>
-                <li>
-                    <a class="list-link" href="#about-me">
-                        HOME
-                    </a>
-                </li>
-                <li>
-                    <a class="list-link" href="#about-me">
-                        ABOUT ME
-                    </a>
-                </li>
-                <li>
-                    <a class="list-link" href="#hobby">
-                        HOBBY
-                    </a>
-                </li>
-                <li>　
-                    <a class="list-link" href="#carrer">
-                        CARRER
-                    </a>
-                </li>
-                <li>
-                    <a class="list-link" href="#works">
-                        WORKS
-                    </a>
-                </li>
-                <li class="close">
-                    <span>
-                        × CLOSE
-                    </span>
-                </li>
-                <div class="sns-icons-sp">
-                    <li>
-                        <a href="https://twitter.com/George23767665" target="_blank">
-                            <img src="img/icon_tw.png" width="30" height="30">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/profile.php?id=100009791496155" target="_blank">
-                            <img src="img/icon_fb.png" width="30" height="30">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/george_onepiece_naruto/" target="_blank">
-                            <img src="img/icon_ig.png" width="30" height="30">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.wantedly.com/users/103094284" target="_blank">
-                            <img src="img/icon_wa.png" width="30" height="30">
-                        </a>
-                    </li>
-                </div>
-            </ul>
-        </div>
+
         <div class="header-list">
             <ul class="column">
                 <li>

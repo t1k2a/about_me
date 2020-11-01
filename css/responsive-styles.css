@@ -11,16 +11,10 @@
 
     #logo {
         width: 100%;
-        /* 検証用に非表示 */
-        display: none; 
     }
 
     .icon {
         margin-top: -50px;
-    }
-
-    .close {
-        
     }
 
     .header-list-sp,
@@ -38,11 +32,9 @@
 
     .me-sp {
         display: block;
-        /* margin-left: 125px; */
         margin-top: 50px;
         width: 133%;
         height: 50%;
-        /* width: 200%; */
     }
 
     .self-title,
@@ -75,81 +67,20 @@
         width: 500px;
     }
 
-    #hamburger {
-        position: relative;
-        display: block;
-        width: 30px;
-        height: 25px;
-        margin: 30px 0 0 450px;
-    }
-
-    #hamburger span{
-        position: absolute;
-        top: 50%;
-        left: 0;
-        width: 100%;
-        display: block;
-        height: 2px;
-        background-color: black;
-        transform: translateY(-50%);
-    }
-
-    #hamburger:before {
-        content: '';
-        display: block;
-        position: absolute;
-        top: 0%;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        background-color: black;
-    }
-
-    #hamburger:after {
-        content: '';
-        display: block;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        background-color: black;
-    }
-
-    #hamburger:checked ~ #hamburger span::before{
-        bottom: 0;
-        transform: rotate(45deg);
-    }
-    #hamburger:checked ~ #hamburger span::after{
-        bottom: 0;
-        transform: rotate(-45deg);
-    }
-
     .header-list-sp {
         z-index: 1;
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
-        height: 100vh;
+        height: 100%;
         display: block;
         background: white!important;
         opacity: 0;
         text-align: center;
-        transform: translateY(-100%);
-        transition: all .2S ease-in-out;
-    }
-
-    .close {
-        display: block;
-        /* position: sticky;
-        top: 0;
-        height: 0;
-        text-align: right; */
     }
 
     .header-list-sp ul {
-        /* padding: 0; */
         margin-top: 10%;
         display: block;
         height: 100%;
@@ -191,4 +122,76 @@
         transform: translateY( 0 );
         opacity: 1;
     }
+
+    .nav_toggle {
+        position: relative;
+        display: block;
+        width: 30px;
+        height: 25px;
+        margin: 20px 0 0 450px;
+    }
+
+    .nav_toggle i {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #333333;
+        position: absolute;
+        transition: transform .5s, opacity .5s;
+    }
+
+    .nav_toggle i:nth-child(1) {
+        top: 0;
+    }
+    
+    .nav_toggle i:nth-child(2) {
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    
+    .nav_toggle i:nth-child(3) {
+        bottom: 0;
+    }
+
+    .nav_toggle.show i:nth-of-type(1) {
+        transform: translateY(10px) rotate(-45deg);
+    }
+
+    .nav_toggle.show i:nth-child(2) {
+        opacity: 0;
+    }
+
+    .nav_toggle.show i:nth-child(3) {
+        transform: translateY(-12px) rotate(45deg);
+    }
+
+    .hamburger {
+         background: white!important;
+    }
+
+    .nav { 
+        position: fixed;
+        top: 3rem;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 1rem;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity .5s, visibility .5s;
+    }
+
+    .nav.show {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .scroll-prevent html:not(.nav_toggle){
+        position: fixed;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+    }
+
 }
