@@ -1,0 +1,23 @@
+{
+  "name": "about_me",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start --server --files='./*.html, ./*.css'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/t1k2a/about_me.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/t1k2a/about_me/issues"
+  },
+  "homepage": "https://github.com/t1k2a/about_me#readme",
+  "description": "",
+  "devDependencies": {
+    "browser-sync": "^2.26.13"
+  }
+}
