@@ -17,15 +17,6 @@
         margin-top: -50px;
     }
 
-    .header-list-sp,
-    .list-icon {
-        display: block;
-    }
-
-    .sns-icons,
-    .column{
-        display: none;
-    }
     .me {
         display: none;
     }
@@ -42,8 +33,8 @@
         margin-left: 100px;
     }
 
-    .self-introduction > p{
-        text-align: center;
+    .self-introduction{
+        margin-left: 20px;
     }
 
     .desc-title-pc,
@@ -52,7 +43,9 @@
     }
 
     .hobby-desc {
+        width: 70%;
         margin-top: 50px;
+        margin-left: 30px;
     }
 
     .hobbys {
@@ -63,139 +56,17 @@
         align-items: center;
     }
 
+    .pic > video,
+    .pic > img {
+        margin-left: 10px;
+    }
+
     .footer {
-        width: 500px;
+        width: 552px;
+        max-width: 600px;
     }
 
-    .header-list-sp {
-        z-index: 1;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        display: block;
-        background: white!important;
-        opacity: 0;
-        text-align: center;
+    .footer > p {
+        bottom: 10px;
     }
-
-    .header-list-sp ul {
-        margin-top: 10%;
-        display: block;
-        height: 100%;
-        list-style: none;
-    }
-
-    .header-list-sp li {
-        font-size: 24px;
-    }
-
-    .header-list-sp li span {
-        font-size: 15px;
-        color: var(--white);
-    }
-
-    .header-list-sp li a, .header-list-sp li span {
-        display: block;
-        padding: 20px 0;
-    }
-
-    .header-list-sp .close {
-        position: relative;
-        padding-left: 20px;
-    }
-
-    .sns-icons-sp {
-        margin-top: 40%;
-        display: flex;
-        flex-direction: row;
-    }
-
-    .sns-icons-sp li{
-        display: inline-block;
-        width: 50px;
-    }
-
-    .toggle {
-        transform: translateY( 0 );
-        opacity: 1;
-    }
-
-    .nav_toggle {
-        position: relative;
-        display: block;
-        width: 30px;
-        height: 25px;
-        margin: 20px 0 0 450px;
-    }
-
-    .nav_toggle i {
-        display: block;
-        width: 100%;
-        height: 2px;
-        background-color: #333333;
-        position: absolute;
-        transition: transform .5s, opacity .5s;
-    }
-
-    .nav_toggle i:nth-child(1) {
-        top: 0;
-    }
-    
-    .nav_toggle i:nth-child(2) {
-        top: 0;
-        bottom: 0;
-        margin: auto;
-    }
-    
-    .nav_toggle i:nth-child(3) {
-        bottom: 0;
-    }
-
-    .nav_toggle.show i:nth-of-type(1) {
-        transform: translateY(10px) rotate(-45deg);
-    }
-
-    .nav_toggle.show i:nth-child(2) {
-        opacity: 0;
-    }
-
-    .nav_toggle.show i:nth-child(3) {
-        transform: translateY(-12px) rotate(45deg);
-    }
-
-    .hamburger {
-         background: white!important;
-    }
-
-    .nav { 
-        position: fixed;
-        top: 3rem;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        padding: 1rem;
-        opacity: 0;
-        visibility: hidden;
-        transition: opacity .5s, visibility .5s;
-    }
-
-    .nav.show {
-        opacity: 1;
-        visibility: visible;
-    }
-
-    .nav_menu_ul {
-        max-width: 200px;
-        margin: 0 auto;
-    }
-
-    .scroll-prevent html:not(.nav_toggle){
-        position: fixed;
-        z-index: -1;
-        width: 100%;
-        height: 100%;
-    }
-
 }
