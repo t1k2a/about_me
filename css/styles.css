@@ -17,6 +17,7 @@ body {
 }
 
 #logo {
+    display: none;
     width: 100vw;
     height: 100vh;
     transition: all 3s;
@@ -26,7 +27,6 @@ body {
     margin-bottom: 0px;
     font-size: 30px;
     letter-spacing: 2px;
-
     position: fixed;
     top: 0;
     left: 0;
@@ -68,14 +68,10 @@ body {
 }
 
 header {
-    /* padding-top: 32px;
-    padding-bottom: 32px;
-    align-items: center; */
     font-family: lato-black;
 }
 
 .header-list {
-    /* background: orange; */
     display: flex;
     justify-content: space-between;
 }
@@ -107,10 +103,6 @@ a {
     padding-bottom: 30px;
 }
 
-/* .introduction-section {
-        background: orange;
-} */
-
 .introduction {
     width: 800px;
     margin: 0 var(--auto);
@@ -121,10 +113,7 @@ a {
     width: 60%;
     align-self: center;
     font-weight: bold;
-    /* position: absolute;
-    top: 300px;
-    left: 200px; */
-        display: flex;
+     display: flex;
 }
 
 .intro-title {
@@ -154,14 +143,8 @@ a {
     margin-right: 8px;
 }
 
-.icon {
-    
-}
-.me{
-    /* position: absolute; */
+.me {
     width: 100%;
-    /* padding-top: 70px;
-    vertical-align: bottom; */
 }
 
 .me-sp {
@@ -183,33 +166,27 @@ a {
 .hobbys {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
-    /* margin-left: 150px; */
-    margin: 0 0 0 100px;
-        vertical-align: top;
-
-    /* width: calc(50% - 32px); */
+    margin: 0 auto;
+    vertical-align: top;
+    width: calc(50% - 32px);
 }
-
-
-/* .about:nth-child(odd) {
-    flex-direction: row-reverse;
-} */
 
 .pic {
     margin-bottom: var(--auto);
     width: 360px;    
+    text-align: center;
 }
 
 .pic > img,
 .pic > video {
     width: 300px;
-    /* position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center; */
+    margin-top: 20%;
+}
+
+.hobby-img > img{
+    width: 300px;
+    margin-top: 20%;
 
 }
 
@@ -218,9 +195,29 @@ a {
 }
 
 .hobby-desc {
+    width: 200%;
+    height: 100%;
     text-align: center;
-    padding-right: 100px;
+    display: flex;
+    flex-direction: row;
 }
+
+.hobby-desc >img {
+        margin-top: 10%;
+    width: 50%;
+    height: 50%;
+}
+
+.hobby-desc:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.desc {
+    width: 100%;
+    margin-top: 10%;
+
+}
+
 
 
 .section-title,
@@ -279,18 +276,10 @@ a {
     text-align: center;
 }
 
-.portfolio {
-    width: 600px;
-    margin: 0 auto;
-    display: flex;
-    margin-bottom: 60px;
-    justify-content: space-between;
-    transition: background .3s;
-}
-
 .portfolio-desc {
     padding-left: 32px;
-    width: calc(50% - 32px);
+    /* width: calc(50% - 40px); */
+    width: 70%;
 
 }
 

@@ -1,4 +1,4 @@
-@media screen and (max-width:640px) {
+@media screen and (max-width:896px) {
 
     * {
         margin: 0;
@@ -11,10 +11,12 @@
 
     #logo {
         width: 100%;
+        display: none;
     }
 
     .icon {
         margin-top: -50px;
+
     }
 
     .me {
@@ -23,18 +25,28 @@
 
     .me-sp {
         display: block;
-        margin-top: 50px;
+        max-width: 600px;
         width: 133%;
         height: 50%;
+        margin-top: 50px;
+        margin-left: 20%;
+
+    }
+
+    .title {
+        width: 200px;
+        text-align: center;
     }
 
     .self-title,
     .desc-title-pc {
-        margin-left: 100px;
+        width: 200px;
+        margin-left: 80%;
     }
+    
 
-    .self-introduction{
-        margin-left: 20px;
+    .self-introduction > p{
+        margin-left: 10%;
     }
 
     .desc-title-pc,
@@ -42,14 +54,20 @@
         margin-bottom: 50px;
     }
 
+    .portfolio {
+         margin-left: 50%; 
+         margin-right: 50%; 
+    }
+
     .hobby-desc {
+        display: block;
         width: 70%;
         margin-top: 50px;
-        margin-left: 30px;
+        margin-left: 20%;
     }
 
     .hobbys {
-        display: flex;
+        display: block;
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
@@ -58,8 +76,8 @@
 
     .pic > video,
     .pic > img {
-        margin-left: 10px;
-    }
+        margin-right: 10%; 
+   }
 
     .footer {
         width: 552px;
