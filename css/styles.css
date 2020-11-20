@@ -17,7 +17,7 @@ body {
 }
 
 #logo {
-    display: none;
+    /* display: none; */
     width: 100vw;
     height: 100vh;
     transition: all 3s;
@@ -172,6 +172,16 @@ a {
     width: calc(50% - 32px);
 }
 
+.works {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    vertical-align: top;
+    width: calc(50% - 32px);
+}
+
 .pic {
     margin-bottom: var(--auto);
     width: 360px;    
@@ -277,9 +287,7 @@ a {
 }
 
 .portfolio-desc {
-    padding-left: 32px;
-    /* width: calc(50% - 40px); */
-    width: 70%;
+    width: 100%;
 
 }
 
