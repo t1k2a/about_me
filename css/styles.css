@@ -164,12 +164,13 @@ a {
 }
 
 .hobbys {
-    display: flex;
+  display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
-    margin: 0 auto;
+    margin: auto 0 auto 16%;
     vertical-align: top;
-    width: calc(50% - 32px);
+    width: 70%;
 }
 
 .works {
@@ -205,30 +206,25 @@ a {
 }
 
 .hobby-desc {
-    width: 200%;
-    height: 100%;
     text-align: center;
-    display: flex;
-    flex-direction: row;
+    padding-right: 100px;
 }
 
 .hobby-desc >img {
-        margin-top: 10%;
+    margin-top: 10%;
     width: 50%;
     height: 50%;
 }
 
-.hobby-desc:nth-child(even) {
+/* .hobby-desc:nth-child(even) {
     flex-direction: row-reverse;
-}
+} */
 
 .desc {
     width: 100%;
     margin-top: 10%;
 
 }
-
-
 
 .section-title,
 .self-title{

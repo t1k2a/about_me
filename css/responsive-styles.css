@@ -12,7 +12,7 @@
 
     #logo {
         width: 100%;
-        /* display: none; */
+        display: none;
     }
 
     .icon {
@@ -46,7 +46,18 @@
     
 
     .self-introduction > p{
-        margin-left: 10%;
+        margin-left: 15%;
+    }
+
+    .works {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: auto 0 auto 115%;
+        vertical-align: top;
+        width: calc(50% - 32px);
+        max-width: 600px;
     }
 
     .desc-title-pc,
@@ -55,8 +66,7 @@
     }
 
     .portfolio {
-         margin-left: 50%; 
-         margin-right: 50%; 
+        height: auto;
     }
 
     .hobby-desc {
@@ -66,21 +76,28 @@
         margin-left: 20%;
     }
 
+    .hobby-desc > img {
+        width: 100%;
+    }
+
     .hobbys {
         display: block;
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        /* margin: auto 0 auto 16%; */
+        width: 208%;
     }
 
     .pic > video,
     .pic > img {
+        width: 100%;
         margin-right: 10%; 
    }
 
     .footer {
-        width: 552px;
+        width: 200%;
         max-width: 600px;
     }
 
