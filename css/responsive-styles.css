@@ -1,4 +1,4 @@
-@media screen and (max-width:896px) {
+@media screen and (max-width: 1024px) and (orientation: portrait) {
 
     * {
         margin: 0;
